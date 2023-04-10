@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/returnHomeBtn1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".optionsScreen">
+
+    <Button
+        android:id="@+id/confirmBtn2"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#51C956"
+        android:text="CONFIRM"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/returnHomeBtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volumeBar" />
+
+    <Button
+        android:id="@+id/returnHomeBtn2"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="#51C956"
+        android:text="Return Home"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmBtn2" />
+
+    <ImageView
+        android:id="@+id/logoImg5"
+        android:layout_width="241dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="646dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <Switch
+        android:id="@+id/notifcationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="218dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="1dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="Notifications"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textToSpeechSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/volLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="208dp"
+        android:background="#00FFFFFF"
+        android:text="Volume"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/volumeBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textToSpeechSwitch" />
+
+    <SeekBar
+        android:id="@+id/volumeBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="218dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="1dp"
+        android:max="10"
+        android:progress="0"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintBottom_toTopOf="@+id/confirmBtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volLbl" />
+
+    <Switch
+        android:id="@+id/textToSpeechSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="1dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="Text to Speech"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/volLbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notifcationSwitch" />
+
+    <TextView
+        android:id="@+id/optionsLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="570dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:text="Options"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

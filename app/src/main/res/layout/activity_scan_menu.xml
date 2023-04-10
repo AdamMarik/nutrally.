@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scanMenu">
+
+    <ImageView
+        android:id="@+id/logoImg8"
+        android:layout_width="320dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="6dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/camera_preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="320dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="46dp"
+        android:backgroundTint="#409143"
+        android:fontFamily="monospace"
+        android:text="Scan"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/addBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camera_preview" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="140dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#409143"
+        android:fontFamily="monospace"
+        android:onClick="addProduct"
+        android:text="Add"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homeBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scanBtn" />
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="140dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#409143"
+        android:fontFamily="monospace"
+        android:text="Home"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addBtn"
+        app:layout_constraintTop_toBottomOf="@+id/scanBtn" />
+
+    <SurfaceView
+        android:id="@+id/camera_preview"
+        android:layout_width="350dp"
+        android:layout_height="346dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/scanBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImg8" />
+</androidx.constraintlayout.widget.ConstraintLayout>
